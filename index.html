@@ -8,40 +8,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Half Slider - Start Bootstrap Template</title>
+    <title>25 years Faculty of Engineering</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Cards -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
 
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-Secondary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <!--<a class="navbar-brand" href="#"><img src="./src/images/logo_eng.png" id="logo-navber" /></a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#">หน้าหลัก
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">ลงทะเบียน</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">เข้าสู่ระบบ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">ติดต่อ</a>
             </li>
           </ul>
         </div>
@@ -57,26 +66,26 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item active" style="background-image: url('./src/images/banner01.png')">
+            <!--<div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
-            </div>
+            </div>-->
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item" style="background-image: url('./src/images/banner02.png')">
+            <!--<div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
-            </div>
+            </div>-->
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item" style="background-image: url('./src/images/banner03.png')">
+            <!--<div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
             </div>
-          </div>
+          </div>-->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,18 +100,175 @@
 
     <!-- Page Content -->
     <section class="py-5">
-      <div class="container">
-        <h1>Half Slider by Start Bootstrap</h1>
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-          <code>half-slider.css</code>
-          file.</p>
-      </div>
+      <div class="slide-container">
+  
+        <div class="wrapper">
+          <div class="clash-card barbarian">
+            <div class="clash-card__image clash-card__image--barbarian">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian" />
+            </div>
+            <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
+            <div class="clash-card__unit-name">The Barbarian</div>
+            <div class="clash-card__unit-description">
+              The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+              <div class="one-third">
+                <div class="stat">20<sup>S</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">16</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">150</div>
+                <div class="stat-value">Cost</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card barbarian-->
+        </div> <!-- end wrapper -->
+        
+        <div class="wrapper">
+          <div class="clash-card archer">
+            <div class="clash-card__image clash-card__image--archer">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png" alt="archer" />
+            </div>
+            <div class="clash-card__level clash-card__level--archer">Level 5</div>
+            <div class="clash-card__unit-name">The Archer</div>
+            <div class="clash-card__unit-description">
+              The Archer is a female warrior with sharp eyes. She wears a short, light green dress, a hooded cape, a leather belt and an attached small pouch.
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+              <div class="one-third">
+                <div class="stat">25<sup>S</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">24</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">300</div>
+                <div class="stat-value">Cost</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card archer-->
+        </div> <!-- end wrapper -->
+        
+        <div class="wrapper">
+          <div class="clash-card giant">
+            <div class="clash-card__image clash-card__image--giant">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png" alt="giant" />
+            </div>
+            <div class="clash-card__level clash-card__level--giant">Level 5</div>
+            <div class="clash-card__unit-name">The Giant</div>
+            <div class="clash-card__unit-description">
+              Slow, steady and powerful, Giants are massive warriors that soak up huge amounts of damage. Show them a turret or cannon and you'll see their fury unleashed!
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+              <div class="one-third">
+                <div class="stat">2<sup>M</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">12</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">2250</div>
+                <div class="stat-value">Cost</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card giant-->
+        </div> <!-- end wrapper -->
+        
+         <div class="wrapper">
+          <div class="clash-card goblin">
+            <div class="clash-card__image clash-card__image--goblin">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
+            </div>
+            <div class="clash-card__level clash-card__level--goblin">Level 5</div>
+            <div class="clash-card__unit-name">The Goblin</div>
+            <div class="clash-card__unit-description">
+              These pesky little creatures only have eyes for one thing: LOOT! They are faster than a Spring Trap, and their hunger for resources is limitless.
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+              <div class="one-third">
+                <div class="stat">30<sup>S</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">32</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">100</div>
+                <div class="stat-value">Cost</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card goblin-->
+        </div> <!-- end wrapper -->
+        
+        <div class="wrapper">
+          <div class="clash-card wizard">
+            <div class="clash-card__image clash-card__image--wizard">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png" alt="wizard" />
+            </div>
+            <div class="clash-card__level clash-card__level--wizard">Level 6</div>
+            <div class="clash-card__unit-name">The Wizard</div>
+            <div class="clash-card__unit-description">
+              The Wizard is a terrifying presence on the battlefield. Pair him up with some of his fellows and cast concentrated blasts of destruction on anything, land or sky!
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+              <div class="one-third">
+                <div class="stat">5<sup>M</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">16</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">4000</div>
+                <div class="stat-value">Cost</div>
+              </div>
+      
+            </div>
+      
+          </div> <!-- end clash-card wizard-->
+        </div> <!-- end wrapper -->
+        
+      </div> <!-- end container -->
     </section>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; ECPE 2018</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -110,6 +276,11 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script js cards -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    <script src="js/index.js"></script>
 
   </body>
 
